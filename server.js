@@ -12,7 +12,7 @@ const app = express()
 app.use(express.json())
 
 app.use(cors({
-    origin:"https://integration-frontend-qdeo.onrender.com/"
+    origin:"https://integration-frontend-qdeo.onrender.com"
 }))
 
 app.get("/", (req, res) => {
