@@ -11,7 +11,9 @@ connectDB()
 const app = express()
 app.use(express.json())
 
-app.use(cors())
+app.use(cors({
+    origin:"https://integration-frontend-qdeo.onrender.com/"
+}))
 
 app.get("/", (req, res) => {
     res.status(200).json("Server is running")
